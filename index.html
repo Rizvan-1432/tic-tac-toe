@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Крестики-нолики - Начало игры</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в Крестики-нолики!</h1>
+        <button id="start-button" class="button">Начать игру</button>
+    </div>
+    <script>
+        document.getElementById('start-button').addEventListener('click', function() {
+            window.location.href = 'game.html'; // Перенаправление на страницу с игрой
+        });
+    </script>
+</body>
+</html>

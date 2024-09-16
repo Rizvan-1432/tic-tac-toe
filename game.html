@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Крестики-нолики</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Крестики-нолики</h1>
+        <div id="game-board" class="board">
+            <div class="cell" data-cell-index="0"></div>
+            <div class="cell" data-cell-index="1"></div>
+            <div class="cell" data-cell-index="2"></div>
+            <div class="cell" data-cell-index="3"></div>
+            <div class="cell" data-cell-index="4"></div>
+            <div class="cell" data-cell-index="5"></div>
+            <div class="cell" data-cell-index="6"></div>
+            <div class="cell" data-cell-index="7"></div>
+            <div class="cell" data-cell-index="8"></div>
+        </div>
+        <div class="controls">
+            <button id="player-vs-player" class="button">Игрок vs Игрок</button>
+            <button id="player-vs-computer" class="button">Игрок vs Компьютер</button>
+            <select id="difficulty" class="button">
+                <option value="easy">Легкий</option>
+                <option value="medium">Средний</option>
+                <option value="hard">Сложный</option>
+            </select>
+            <button id="restart-button" class="button">Перезапустить игру</button>
+            <button id="reset-stats-button" class="button">Сбросить статистику</button>
+            <button id="save-button" class="button">Сохранить игру</button>
+            <button id="load-button" class="button">Загрузить игру</button>
+        </div>
+        <div id="message" class="message hide"></div>
+        <div id="stats" class="stats"></div>
+            <h2>Статистика</h2>
+            <p>Игрок X: <span id="x-wins">0</span> побед</p>
+            <p>Игрок O: <span id="o-wins">0</span> побед</p>
+            <p>Ничьи: <span id="draws">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
